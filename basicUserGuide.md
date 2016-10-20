@@ -74,9 +74,11 @@ Circle mode is similar to LOITER, but doesn’t attempt to hold position. Circle
 
 <div id='RTL'/>
 ### RTL
+Causes the plane fly to the GPS lat/long (but not alt!) location the plane was armed at, and circle over that location. It will continue to circle until it runs out of power. Because of this, be sure to arm the plane in a place that will be safe to RTL over. If you want it to go to another place, look into rally points.
 
 <div id='AUTO'/>
 ### AUTO
+Will fly to waypoints in the mission file, similar to quadcopter. The waypoint radius is an important number, if the plane doesn't fly within the radius it will circle around to try again, which may be problematic for the mission. Air on the high side when choosing the radius.
 
 <div id='Sensor Setup'/>
 ## Sensor Setup
